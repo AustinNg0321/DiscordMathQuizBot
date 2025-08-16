@@ -11,17 +11,17 @@ Required libraries must be installed.
 
 Commands:
 =========
-  !start: Begins a new quiz based on user settings.
-  !view_settings: Displays current quiz settings.
-  !change_num_questions <number>: Changes the number of questions.
-  !change_max_num <number>: Sets the maximum number for questions.
-  !set_operations <operators>: Updates allowed operations (+, -, *, /).
-  !allow_negatives: Permits negative numbers in questions.
-  !disallow_negatives: Disallows negative numbers.
-  !view_report: Shows the results of the last quiz.
-  !view_stats: Displays overall statistics.
-  !reset_stats: Resets user statistics.
-  !explain_question <number>: Requests an explanation for a specific question using ChatGPT.
+  !start: Begins a new quiz based on user settings.  
+  !view_settings: Displays current quiz settings.  
+  !change_num_questions <number>: Changes the number of questions.  
+  !change_max_num <number>: Sets the maximum number for questions.  
+  !set_operations <operators>: Updates allowed operations (+, -, *, /).  
+  !allow_negatives: Permits negative numbers in questions.  
+  !disallow_negatives: Disallows negative numbers.  
+  !view_report: Shows the results of the last quiz.  
+  !view_stats: Displays overall statistics.  
+  !reset_stats: Resets user statistics.  
+  !explain_question <number>: Requests an explanation for a specific question using ChatGPT.  
 
 
 User Interaction:
