@@ -32,9 +32,14 @@ Users interact with the bot through commands within Discord, receiving quizzes, 
 Technologies and Libraries/Frameworks
 =====================================
 Python: The programming language used to develop the bot.
+
 Discord.py: A Python library that enables interaction with the Discord API to build bots and manage Discord servers.
+
 OpenAI API: Used to access ChatGPT for generating explanations for quiz questions.
+
 dotenv: A library for loading environment variables from a .env file, which holds sensitive information like API keys.
+
 Numpy: Used for generating random numbers to create quiz questions.
+
 Asyncio: A Python library for writing asynchronous code, allowing the bot to handle multiple operations concurrently without blocking.
 
