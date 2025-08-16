@@ -38,3 +38,63 @@ dotenv: A library for loading environment variables from a .env file, which hold
 Numpy: Used for generating random numbers to create quiz questions.  
 Asyncio: A Python library for writing asynchronous code, allowing the bot to handle multiple operations concurrently without blocking.  
 
+
+Main Functions and Routines
+=====================================  
+main():  
+The main asynchronous function that initializes the bot, sets up user sessions, and handles events.  
+
+on_ready():  
+An event handler that prints a message to the console when the bot has successfully logged in.  
+
+on_command_error(ctx, exception):  
+An event handler that sends an error message to the Discord channel if a command fails to execute.  
+
+add_user_session(user):  
+A helper function that initializes a new user session with default settings if the user is not already in the session data.
+
+func(ctx):  
+A routine that runs before any command is invoked, ensuring that user sessions are initialized.
+
+
+Command Functions  
+=====================================   
+view_settings(ctx):  
+Sends the current quiz settings of the user to the Discord channel.  
+
+change_num_questions(ctx, num: int):  
+Changes the number of questions in the user's quiz and sends a confirmation message.  
+
+change_max_num(ctx, num: int):  
+Updates the maximum number that can be used in questions and sends a confirmation message.  
+
+set_operations(ctx, *operators):  
+Updates the allowed mathematical operations for the quiz and sends a confirmation message. Handles errors if illegal operations are provided.  
+
+allow_negatives(ctx):  
+Allows negative numbers in quiz questions and sends a confirmation message.  
+
+disallow_negatives(ctx):  
+Disallows negative numbers in quiz questions and sends a confirmation message.  
+
+generate_quiz(ctx):  
+Generates a quiz based on the user's settings and updates the quiz object.  
+
+start(ctx):  
+Begins a new quiz session, prompts the user with questions, and records answers until the quiz is completed. Sends the final score to the user.  
+
+view_report(ctx):  
+Generates and sends a report of the user's last quiz, including correct answers and user responses.  
+
+view_stats(ctx):  
+Displays overall statistics for the user, including the number of questions attempted and answered correctly.  
+
+reset_stats(ctx):  
+Resets the user's quiz statistics and sends a confirmation message.  
+
+get_chatgpt_response(prompt):  
+Sends a prompt to the OpenAI API and retrieves a response. Handles errors and returns error messages if needed.  
+
+explain_question(ctx, question_no: int):  
+Requests an explanation for a specific quiz question from ChatGPT and sends the response to the user. Verifies the question number's validity before proceeding.  
+
