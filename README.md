@@ -5,8 +5,8 @@ The MathQuizBot is a Discord bot created to generate and manage simple math quiz
 
 Setup:
 ======
-Users must have a Discord bot token and an OpenAI API key, which are stored in a .env file.
-Required libraries must be installed.
+Users must have a Discord bot token and an OpenAI API key, which are stored in a .env file.  
+Required libraries must be installed.  
 
 
 Commands:
@@ -31,15 +31,10 @@ Users interact with the bot through commands within Discord, receiving quizzes, 
 
 Technologies and Libraries/Frameworks
 =====================================
-Python: The programming language used to develop the bot.
-
-Discord.py: A Python library that enables interaction with the Discord API to build bots and manage Discord servers.
-
-OpenAI API: Used to access ChatGPT for generating explanations for quiz questions.
-
-dotenv: A library for loading environment variables from a .env file, which holds sensitive information like API keys.
-
-Numpy: Used for generating random numbers to create quiz questions.
-
-Asyncio: A Python library for writing asynchronous code, allowing the bot to handle multiple operations concurrently without blocking.
+Python: The programming language used to develop the bot.  
+Discord.py: A Python library that enables interaction with the Discord API to build bots and manage Discord servers.  
+OpenAI API: Used to access ChatGPT for generating explanations for quiz questions.  
+dotenv: A library for loading environment variables from a .env file, which holds sensitive information like API keys.  
+Numpy: Used for generating random numbers to create quiz questions.  
+Asyncio: A Python library for writing asynchronous code, allowing the bot to handle multiple operations concurrently without blocking.  
 
